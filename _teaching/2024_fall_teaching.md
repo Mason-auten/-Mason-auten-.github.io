@@ -10,4 +10,4 @@ location: "Nashville, TN"
 
 # PSCI 2221: Causes of War (Prof. Brad Smith)
 
-Served as a teaching assistant for an undergraduate course on the causes of war. Responsibilities included grading assignments and exams, holding office hours, and assisting with course logistics. The course covered theories of war with a focus on formal modeling and rationalist explanations. 
+Teaching assistant for an undergraduate course on the causes of war, covering rationalist explanations for conflict and introductory bargaining models. Graded assignments and exams, held weekly office hours, and supported course logistics.

@@ -11,7 +11,7 @@ author_profile: true
 {% for paper in site.papers reversed %}
   <section class="paper-listing">
     <h3>{{ paper.title }}</h3>
-    <p><strong>Working paper ({{ paper.date | date: "%Y" }})</strong></p>
+    <p><strong>{{ paper.status | default: "Working paper" }} ({{ paper.date | date: "%Y" }})</strong></p>
     {% if paper.excerpt %}
       <p>{{ paper.excerpt }}</p>
     {% endif %}

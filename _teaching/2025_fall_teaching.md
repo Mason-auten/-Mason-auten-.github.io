@@ -10,4 +10,4 @@ location: "Nashville, TN"
 
 # PSCI 2300: Quantitative Political Science I: Computing (Prof. Brenton Kenkel)
 
-Served as Teaching Assistant for Quantitative Political Science under Prof. Brenton Kenkel. Supported students in learning statistical programming using R, data analysis techniques, and interpretation of quantitative results in political science research. Responsibilities included, grading assignments, holding office hours, and assisting with course logistics.
+Teaching assistant for the department's introductory course in statistical programming. Led students through data wrangling, visualization, and analysis in R, and through the interpretation of quantitative results in political science research. Graded assignments, held weekly office hours, and supported course logistics.

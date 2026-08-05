@@ -41,6 +41,12 @@ Location
 
 ## Research Experience
 
+
+* **Vanderbilt University**, Nashville, TN  
+  Research Assistant, 2025–2026.  
+  Supervisor: Brenton Kenkel.  
+  Research on state building, conflict, and formal modeling.
+
 * **Vanderbilt University**, Nashville, TN  
   Research Assistant, Spring 2024.  
   Supervisor: Andrés Gannon.  

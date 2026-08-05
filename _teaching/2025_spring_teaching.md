@@ -10,4 +10,4 @@ location: "Nashville, TN"
 
 # PSCI 3229: Strategy and International Politics (Prof. Brad Smith)
 
-Served as a teaching assistant for a graduate course on strategy in international politics. The class focused on an introduction to game theory through the lens of the first World War. Responsibilities included grading assignments and exams, holding office hours, and assisting with course logistics.
+Teaching assistant for an undergraduate course introducing game theory through the strategic history of the First World War. Graded assignments and exams, held weekly office hours, and supported course logistics.
