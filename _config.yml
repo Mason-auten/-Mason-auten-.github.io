@@ -23,7 +23,7 @@ repository               : "Mason-auten/Mason-auten.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : ""
+  avatar           : "mason-auten.jpg"
   name             : "Mason Auten"
   pronouns         : # example: "she/her"  
   bio              : "PhD student in political science. I study statebuilding, war, and political economy of conflict using formal models and historical data."

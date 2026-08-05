@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year PhD student in International Relations at Vanderbilt University. My research interests include state formation, foreign intervention, political violence, and formal theory. I use a mix of formal modeling and quantitative methods to study the relationship between war and the state.
+I am a fourth-year PhD student in International Relations at Vanderbilt University. My research interests include state formation, political violence, networks, and formal theory. I use a mix of formal modeling and quantitative methods to study the relationship between violence and the state.
