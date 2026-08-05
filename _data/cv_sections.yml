@@ -1,0 +1,89 @@
+# Single source for the hand-written CV sections.
+#
+# Working Papers, Teaching, and Conference Presentations are NOT here --
+# they are derived from _papers/, _teaching/, and _talks/ by cv/build_cv.R.
+# Edit those collections instead.
+#
+# Rebuild the PDF after editing:  Rscript cv/build_cv.R && latexmk -pdf -cd cv/cv.tex
+#
+# Named cv_sections.yml, not cv.yml, on purpose: Jekyll maps _data/cv.yml and the
+# academicpages placeholder _data/cv.json onto the same site.data.cv key, and the
+# JSON silently wins.
+
+basics:
+  name: "Mason Auten"
+  email: "mason.auten@vanderbilt.edu"
+  website: "https://mason-auten.github.io"
+  github: "https://github.com/Mason-auten"
+  location: "Nashville, TN, United States"
+
+education:
+  - institution: "Vanderbilt University"
+    location: "Nashville, TN"
+    degree: "Ph.D. in Political Science"
+    dates: "Expected 2028"
+    detail:
+      - "Advisor: Prof. Brenton Kenkel"
+      - "Primary Field: International Relations"
+      - "Research Interests: State formation, state capacity, and historical political economy"
+
+  - institution: "University of Colorado Colorado Springs"
+    location: "Colorado Springs, CO"
+    degree: "B.A. in Interdisciplinary Studies"
+    dates: "2021-2023"
+    detail:
+      - 'Thesis: "The Eroding Nuclear Taboo"'
+      - "Graduated Summa Cum Laude"
+      - "Awards: President's List (multiple semesters)"
+      - "National Security Scholars Program (Member, 2021-2023)"
+
+research_experience:
+  - role: "Research Assistant"
+    institution: "Vanderbilt University"
+    dates: "2025-2026"
+    supervisor: "Prof. Brenton Kenkel"
+    topics: "State building, conflict, and formal modeling"
+
+  - role: "Research Assistant"
+    institution: "Vanderbilt University"
+    dates: "Spring 2024"
+    supervisor: "Prof. Andres Gannon"
+    topics: "Arms, programming, GitHub-based workflows, and quantitative methods in R"
+
+  - role: "Research Assistant"
+    institution: "Vanderbilt University"
+    dates: "2023-2024"
+    supervisor: "Prof. Brett Benson"
+    topics: "International security and multiparty conflict"
+
+  - role: "Organizer"
+    institution: "Online Peace Science Colloquium (OPSC)"
+    dates: "2024-Present"
+    topics: "Managing logistics, coordinating speakers, and facilitating discussions"
+
+fellowships:
+  - "Graduate Research Fellowship, Vanderbilt University, 2023-Present"
+
+workshops:
+  - name: "Conflict Workshop"
+    venue: "Vanderbilt University"
+    role: "Discussant and Presenter"
+    dates: "2023-Present"
+  - name: "IR Graduate Student Workshop"
+    venue: "Vanderbilt University"
+    role: "Presenter"
+    dates: "2024-Present"
+  - name: "Online Peace Science Colloquium (OPSC)"
+    role: "Organizer"
+    dates: "2024-Present"
+
+skills:
+  - label: "Programming"
+    items: "R, Python, LaTeX"
+  - label: "Methodologies"
+    items: "Quantitative methods, formal modeling"
+
+service:
+  - "Graduate Student Workshop Planner, Graduate Student Association, Vanderbilt University, 2024-2025"
+
+references: "Available upon request."

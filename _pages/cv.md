@@ -8,54 +8,51 @@ redirect_from:
 ---
 
 {% include base_path %}
+{% assign cv = site.data.cv_sections %}
+
+<a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
 
 
 ## Contact Information
 
 Email  
-:   [`mason.auten@vanderbilt.edu`](mailto:mason.auten@vanderbilt.edu)
+:   [`{{ cv.basics.email }}`](mailto:{{ cv.basics.email }})
 
 Web  
-:   <https://mason-auten.github.io>
+:   <{{ cv.basics.website }}>
 
 GitHub  
-:   <https://github.com/Mason-auten>
+:   <{{ cv.basics.github }}>
 
 Location  
-:   Nashville, TN, United States
+:   {{ cv.basics.location }}
 
 
 ## Education
 
-* **Vanderbilt University**, Nashville, TN  
-  Ph.D. student, Political Science, expected 2028.  
-  Advisor: Brenton Kenkel.  
-  Primary field: International Relations.  
-  Research interests: state formation, state capacity, historical political economy.
-
-* **University of Colorado Colorado Springs**, Colorado Springs, CO  
-  B.A., Interdisciplinary Studies, 2023.  
-  Thesis: “The Eroding Nuclear Taboo.”   
-  National Security Scholars Program (member, 2021–2023).
+<ul>
+{%- for e in cv.education %}
+  <li>
+    <strong>{{ e.institution }}</strong>, {{ e.location }}<br />
+    {{ e.degree }}, {{ e.dates }}.
+    {%- for d in e.detail %}<br />{{ d }}.{% endfor %}
+  </li>
+{%- endfor %}
+</ul>
 
 
 ## Research Experience
 
-
-* **Vanderbilt University**, Nashville, TN  
-  Research Assistant, 2025–2026.  
-  Supervisor: Brenton Kenkel.  
-  Research on state building, conflict, and formal modeling.
-
-* **Vanderbilt University**, Nashville, TN  
-  Research Assistant, Spring 2024.  
-  Supervisor: Andrés Gannon.  
-  Research on arms, programming, GitHub-based workflows, and quantitative methods in R.
-
-* **Vanderbilt University**, Nashville, TN  
-  Research Assistant, 2023–2024.  
-  Supervisor: Brett Benson.  
-  Research on international security and multiparty conflict.
+<ul>
+{%- for r in cv.research_experience %}
+  <li>
+    <strong>{{ r.role }}</strong>, {{ r.institution }}<br />
+    {{ r.dates }}.
+    {%- if r.supervisor %}<br />Supervisor: {{ r.supervisor }}.{% endif %}<br />
+    {{ r.topics }}.
+  </li>
+{%- endfor %}
+</ul>
 
 
 ## Working Papers
@@ -76,19 +73,44 @@ Location
 <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
+## Fellowships and Grants
+
+<ul>
+{%- for f in cv.fellowships %}
+  <li>{{ f }}.</li>
+{%- endfor %}
+</ul>
+
+
 ## Workshops and Seminars
 
-* Conflict Workshop, Vanderbilt University — Discussant and Presenter, 2023–present.  
-* IR Graduate Student Workshop — Presenter, 2024–present.
-* Organizer, Online Peace Science Colloquium (OPSC), 2024–present.  
+<ul>
+{%- for w in cv.workshops %}
+  <li><strong>{{ w.name }}</strong>{% if w.venue %}, {{ w.venue }}{% endif %} — {{ w.role }}, {{ w.dates }}.</li>
+{%- endfor %}
+</ul>
+
+
+## Skills
+
+<ul>
+{%- for s in cv.skills %}
+  <li><strong>{{ s.label }}</strong>: {{ s.items }}</li>
+{%- endfor %}
+</ul>
 
 
 ## Service
 
-* Graduate Student Workshop Planner, Graduate Student Association, Vanderbilt University, 2024–2025.
+<ul>
+{%- for s in cv.service %}
+  <li>{{ s }}.</li>
+{%- endfor %}
+</ul>
 
 
 ## References
 
-Available upon request.
+{{ cv.references }}
